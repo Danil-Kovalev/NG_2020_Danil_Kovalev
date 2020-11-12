@@ -4,19 +4,15 @@ using namespace std;
 
 int main()
 {
-   int a = 0;
-   int b = 0;
+   int a, b ,c;
    cout << " Enter size: ";
-   cin >> a;
-   while (b < a)
-   {
-   while (b < a)
-   {
-   cout << "*" << endl;
-   b++;
+ cin >> a;
+   for ( b = 0; b <= a - 1; b++ ) {
+   for ( c = 0; c <= a - 2; c++)  {
+      cout << "*";
    }
-   cout << "*";
+      cout << "*" << endl;
+   }
    cout << endl;
-   b++;
-   }
-   }
+
+}
