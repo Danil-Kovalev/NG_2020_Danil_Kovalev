@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
- int a, b, c, d;
+ int a, b, c;
  cout << " Enter number 1: ";
  cin >> a;
  cout << " Enter number 2: ";
@@ -12,13 +12,22 @@ int main()
  cout << " Enter number 1-4: ";
  cin >> c;
   switch ( c ) {
-          case 1: a + b;
-          case 2: a - b;
-          case 3: a * b;
-          case 4: a / b;
-          default: cout << "Error...";
+  case 1:
+      cout << " Result: " << a + b;
+      break;
+  case 2:
+      cout << " Result: " << a - b;
+      break;
+  case 3:
+      cout << " Result: " << a * b;
+      break;
+  case 4:
+      cout << " Result: " << a / b;
+      break;
+  default:
+      cout << "Error...";
+      break;
   }
-  cout << " Result: " << d;
 }
 
 
