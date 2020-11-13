@@ -15,10 +15,10 @@ int main()
  cout << " Skolko shishek bylo sobrano: ";
  cin >> c;
  d = b * c;
-   if ( a <= d ) {
-       cout << "Yes";
+ if ( a <= d ) {
+     cout << "Yes";
    }
-   else {
-       cout << " No. Zhalko belochku( ";
+ else {
+     cout << " No. Zhalko belochku( ";
    }
 }
