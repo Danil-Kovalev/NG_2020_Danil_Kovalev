@@ -9,7 +9,7 @@ int main()
  cout << " Enter number: ";
  cin >> a;
  while ( b < a ) {
-    cout << b++ << ",";
+       cout << b++ << ",";
  }
  cout << b;
 }
