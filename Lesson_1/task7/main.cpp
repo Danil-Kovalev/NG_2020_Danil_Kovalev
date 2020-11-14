@@ -8,7 +8,8 @@ int main()
  int b = 0;
  cout << " Enter number: ";
  cin >> a;
- while ( b <= a ) {
-        cout << " , " << b++;
+ while ( b < a ) {
+    cout << b++ << ",";
  }
+ cout << b;
 }
