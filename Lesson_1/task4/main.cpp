@@ -10,8 +10,8 @@ int main()
  if ( a < 1000 ) {
      cout << " Rabotai bolshe ";
  }
- if ( a > 999 ) {
-   if ( a < 1000000 ) {
+ if ( a < 1000000 ) {
+   if ( a > 999 ) {
        cout << " Tak derzhat! ";
    }
  }
