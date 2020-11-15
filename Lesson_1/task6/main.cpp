@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
- int a, b ,c, d;
+ int a, b ,c;
  cout << " Enter size: ";
  cin >> a;
  for ( b = 0; b < a; b++) {   //kvadrat
