@@ -4,32 +4,23 @@ using namespace std;
 
 int main()
 {
-    int arr [11];
-    cout << "Enter number school:";
-    cin >> arr [0];
-    cout << "Enter number school:";
-    cin >> arr [1];
-    cout << "Enter number school:";
-    cin >> arr [2];
-    cout << "Enter number school:";
-    cin >> arr [3];
-    cout << "Enter number school:";
-    cin >> arr [4];
-    cout << "Enter number school:";
-    cin >> arr [5];
-    cout << "Enter number school:";
-    cin >> arr [6];
-    cout << "Enter number school:";
-    cin >> arr [7];
-    cout << "Enter number school:";
-    cin >> arr [8];
-    cout << "Enter number school:";
-    cin >> arr [9];
-    cout << "Enter number your school:";
-    cin >> arr [10];
-    for (int i = 0; i < arr [11]; i++) {
-        if (i == 11) {
-           cout << "I know it`s school!";
-        }
-    }
+ int i = 0;
+ int sch = 0;
+ int arr [10];
+ for (i = 0; i < 10; i++) {
+     cout << "Enter number school:";
+     cin >> arr [i];
+ }
+ cout << "Enter your school, please:";
+ cin >> sch;
+ for (i = 0; i < 10; i++) {
+     if (arr [i] == sch) {
+        cout << "I know it`s school";
+        break;
+     }
+     else {
+         cout << "I don`t know your school:";
+         break;
+     }
+ }
 }
