@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1607276624 source:/home/danil/github/git/NG_2020_Danil_Kovalev/Lection_3/carrot.cpp/main.cpp
+	<iostream>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
