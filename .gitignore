@@ -1,9 +1,4 @@
-**/obj
-**/bin
-**/.vs
-**.orig
-**.exe
-**.o
-**.layout
-**.depend
-**.cbp
+*.exe
+*.pro
+*.pro.user
+*/build*
