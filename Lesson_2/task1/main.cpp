@@ -14,10 +14,10 @@ int main()
  cout << "Enter your school, please:";
  cin >> sch;
  for (i = 0; i < 10; i++) {
-     if (sch == arr [i]) {
-        cout << "I know it`s school";
+     if (arr [i] == sch) {
+        cout << "I know your school!";
         return 0;
      }
- }
- cout << "I don`t know your school";
+}
+ cout << "I don`t know your school(";
 }
