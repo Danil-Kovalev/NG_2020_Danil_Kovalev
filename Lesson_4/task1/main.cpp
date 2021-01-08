@@ -2,31 +2,58 @@
 
 using namespace std;
 
-void cycle (int sum, int money, int arr [10], int num, char ex) {
-    while (true)
-    {
-        cout << "Enter credit card number: ";
-        cin >> num;
-        cout << "How much money do you want to put on the card? ";
-        cin >> money;
-        sum += money;
-        arr [num-1] += money;
-        for (int i = 0; i < 10; i++)
+int getCreditNumber () {
+    int numberCard;
+    cout << "Enter credit card number: ";
+    cin >> numberCard;
+    return numberCard;
+}
+int getMoney () {
+    int money;
+    cout << "How much money do you want to put on the card? ";
+    cin >> money;
+    return money;
+}
+int userInput (int arr []) {
+    int num = getCreditNumber();
+    int money = getMoney();
+    arr [num-1] += money;
+    return money;
+}
+int showCards (int arr []) {
+    for (int i = 0; i < 10; i++)
         {
             cout << arr [i] << " ";
         }
         cout << endl;
-        cout << "The amount of the money on all cards: " << sum << endl;
-        cout << "Press F for exit" << endl;
-        cin >> ex;
-        if (ex == 'F') {
-           break;
-        }
-        cout << endl;
+}
+void showSum(int sum) {
+    cout << "The amount of the money on all cards: " << sum << endl;
+}
+int exitOfCycle() {
+    char ex = 0;
+    cout << "Press F for exit" << endl;
+    cin >> ex;
+    if (ex == 'F')
+        return 1;
+    else
+        return 0;
+}
+
+void startOperationAtm (int arr []) {
+    int sum = 0;
+    while (true)
+    {
+          int money = userInput(arr);
+          sum += money;
+          showCards(arr);
+          showSum(sum);
+          if (exitOfCycle() == 1)
+             return;
     }
 }
 
-void zero (int arr [10]) {
+void clean (int arr []) {
      for (int i = 0; i < 10; i++)
      {
          arr [i] = 0;
@@ -36,8 +63,7 @@ void zero (int arr [10]) {
 
 int main()
 {
-    int arr [10], num = 0, money = 0, sum = 0;
-    char ex;
-    zero(arr);
-    cycle(sum, money, arr, num, ex);
+    int arr [10];
+    clean(arr);
+    startOperationAtm(arr);
 }
