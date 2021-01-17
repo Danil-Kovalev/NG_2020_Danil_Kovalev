@@ -15,10 +15,12 @@ int main()
  while (str[i] != '\0') {
        if (str[i] != ' ' && word == 0)
        {
-          word = 1;
-          count++;
+          if (str [i] >= 'a' && str [i] <= 'z') {
+             word = 1;
+             count++;
+          }
        }
-       else if (str[i] == ' ')
+       else if (str[i] >= '0' && str[i] <= '9')
                word = 0;
                i++;
        }
