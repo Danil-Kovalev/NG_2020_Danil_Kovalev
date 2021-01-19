@@ -9,8 +9,9 @@ int main()
     int i = 0;
     cout << "Enter string: ";
     cin.get (string, 500);
-    cout << "Your string: ";
     for (i = 0; i < string[i]; i++) {
-        cout << (char)toupper(string[i]);
+        if (string [i] >= 'a' && string [i] <= 'z')
+           string [i] -= 32;
     }
+    cout << "Your string: " << string;
 }
