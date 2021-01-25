@@ -22,6 +22,6 @@ int main()
        else if (str[i] >= '0' && str[i] <= '9')
                word = 0;
                i++;
-       }
+ }
  cout << "Number words: " << count;
 }
