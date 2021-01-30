@@ -17,5 +17,9 @@ int main()
            tempo -= 32;
            cout << tempo;
         }
+        if ((string [i] >= 0 && string[i] <= 96) || (string [i] >= 123 && string[i] <= 126)) {
+           tempo = string [i];
+           cout << tempo;
+        }
     }
 }
